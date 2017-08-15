@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tim.emercoinonetest.ui.activity.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/emercoin_logo"
+        android:contentDescription="@string/description_emercoin_logo"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item1_bg_eabled">
+
+                <ImageView
+                    android:id="@+id/iv_wallet"
+                    android:layout_width="@dimen/navigation_icon_width"
+                    android:layout_height="@dimen/navigation_icon_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/navigation_icon_margin"
+                    android:contentDescription="@string/description_navigation_icon_wallet"
+                    android:src="@mipmap/ic_wallet"/>
+
+                <TextView
+                    android:id="@+id/tv_my_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/detail_item_margin"
+                    android:text="@string/my_money"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_emercoin"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="@dimen/navigation_icon_margin"
+                        android:src="@mipmap/ic_emercoin_logo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/detail_item_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emercoin"
+                            android:textColor="#9c73b1"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1_000_000000"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/emc"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1_400"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/usd"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/scope_open"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/emc_"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1_4"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/usd_with_close_scope"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_bitcoin"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="@dimen/navigation_icon_margin"
+                        android:src="@mipmap/ic_bitcoin_logo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/detail_item_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bitcoin"
+                            android:textColor="#f16700"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/btc"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1_400"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/usd"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/scope_open"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/btc_"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1_4"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/usd_with_close_scope"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item2_bg_enabled">
+
+                <ImageView
+                    android:id="@+id/iv_rate"
+                    android:layout_width="@dimen/navigation_icon_width"
+                    android:layout_height="@dimen/navigation_icon_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/navigation_icon_margin"
+                    android:contentDescription="@string/description_navigation_icon_wallet"
+                    android:src="@mipmap/ic_rate"/>
+
+                <TextView
+                    android:id="@+id/tv_best_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/detail_item_margin"
+                    android:text="@string/best_rate"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryLight"/>
+
+            <LinearLayout
+                android:id="@+id/ll_best_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/detail_item_margin"
+                    android:text="Лучший спрос"
+                    android:textColor="#a3a3a3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/navigation_icon_width"
+                        android:layout_height="@dimen/navigation_icon_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/navigation_icon_margin"
+                        android:contentDescription="@string/description_navigation_icon_wallet"
+                        android:src="@mipmap/ic_bitcoin_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/detail_item_margin"
+                        android:fontFamily="sans-serif-light"
+                        android:text="EMC/BTC"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/navigation_icon_margin"
+                        android:text="$ 0,4925"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/navigation_icon_width"
+                        android:layout_height="@dimen/navigation_icon_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/navigation_icon_margin"
+                        android:contentDescription="@string/description_navigation_icon_wallet"
+                        android:src="@mipmap/ic_signal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/detail_item_margin"
+                        android:fontFamily="sans-serif-light"
+                        android:text="EMC/RUR"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/navigation_icon_margin"
+                        android:text="28,03"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="72dp"
+                    android:background="#a3a3a3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/detail_item_margin"
+                    android:layout_marginTop="8dp"
+                    android:text="Лучшее предложение"
+                    android:textColor="#a3a3a3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/navigation_icon_width"
+                        android:layout_height="@dimen/navigation_icon_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/navigation_icon_margin"
+                        android:contentDescription="@string/description_navigation_icon_wallet"
+                        android:src="@mipmap/ic_bitcoin_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/detail_item_margin"
+                        android:fontFamily="sans-serif-light"
+                        android:text="EMC/BTC"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/navigation_icon_margin"
+                        android:text="$ 0,4653"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/navigation_icon_width"
+                        android:layout_height="@dimen/navigation_icon_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/navigation_icon_margin"
+                        android:contentDescription="@string/description_navigation_icon_wallet"
+                        android:src="@mipmap/ic_signal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/detail_item_margin"
+                        android:fontFamily="sans-serif-light"
+                        android:text="EMC/RUR"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/navigation_icon_margin"
+                        android:text="27,05"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item2_bg_enabled">
+
+                <ImageView
+                    android:id="@+id/iv_currency_pair"
+                    android:layout_width="@dimen/navigation_icon_width"
+                    android:layout_height="@dimen/navigation_icon_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/navigation_icon_margin"
+                    android:contentDescription="@string/description_navigation_icon_wallet"
+                    android:src="@mipmap/ic_currency_pair"/>
+
+                <TextView
+                    android:id="@+id/tv_currency_pair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/detail_item_margin"
+                    android:text="@string/currency_pair"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryLight"/>
+
+            <FrameLayout
+                android:id="@+id/fl_currency_pair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_currency_pair"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:visibility="visible"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_list_pairs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item2_bg_enabled">
+
+                <ImageView
+                    android:id="@+id/iv_exchange"
+                    android:layout_width="@dimen/navigation_icon_width"
+                    android:layout_height="@dimen/navigation_icon_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/navigation_icon_margin"
+                    android:contentDescription="@string/description_navigation_icon_wallet"
+                    android:src="@mipmap/ic_exchange"/>
+
+                <TextView
+                    android:id="@+id/tv_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/detail_item_margin"
+                    android:text="@string/exchange"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_spinners"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/spinner_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@android:color/transparent"
+                                android:spinnerMode="dropdown"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:src="@drawable/spinner_arrow"
+                                android:tint="@color/colorPrimaryDark"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/ic_convert_arrow"/>
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/spinner_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@android:color/transparent"
+                                android:spinnerMode="dropdown"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:src="@drawable/spinner_arrow"
+                                android:tint="@color/colorPrimaryDark"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pb_currency_pair"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_exchange_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"
+                        tools:text="4.568"/>
+
+                    <ProgressBar
+                        android:id="@+id/pb_exchange_result"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_icon_height">24dp</dimen>
+    <dimen name="navigation_icon_width">24dp</dimen>
+    <dimen name="navigation_icon_margin">16dp</dimen>
+    <dimen name="detail_item_margin">72dp</dimen>
+</resources>
